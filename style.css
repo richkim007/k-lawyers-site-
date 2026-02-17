@@ -1,6 +1,4 @@
-/*
-ULTIMATE FIX: Merging Hero section styles with the main content styles.
-*/
+/* FINAL CORRECTED STYLES */
 
 /* General Body & Layout */
 body {
@@ -8,7 +6,7 @@ body {
     line-height: 1.6;
     margin: 0;
     color: #333;
-    background-color: #f8f9fa; /* Light grey background for the main content area */
+    background-color: #f8f9fa;
 }
 
 main {
@@ -21,7 +19,7 @@ main {
 }
 
 section {
-    padding: 2.5rem 0;
+    padding: 4rem 1rem; /* More vertical padding */
     border-bottom: 1px solid #e9ecef;
 }
 
@@ -32,19 +30,17 @@ section:last-child {
 h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     color: #00234E;
     font-weight: 600;
 }
 
-/* Header, Navigation & HERO SECTION RESTORED */
+/* Header & Hero Section */
 header {
-    background: #001f3f; /* DARK BLUE from the hero screenshot */
+    background: #001f3f; /* Dark Blue Background */
     color: #fff;
     padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    /* REMOVED 'position: sticky' to fix the scrolling disaster */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -53,126 +49,49 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
-    margin: 0 auto 2rem; /* Add margin to separate from hero content */
+    margin: 0 auto;
     padding: 0 2rem;
 }
 
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff; /* White logo text on dark header */
-}
-
+nav .logo { font-size: 1.5rem; font-weight: bold; color: #fff; }
 nav ul { list-style: none; display: flex; }
 nav ul li { margin-left: 2rem; }
-nav a {
-    color: #fff; /* White nav links */
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-nav a:hover { color: #FFC107; }
+nav a { color: #fff; text-decoration: none; font-weight: 500; }
 
 .hero {
-    /* REMOVED 'display: none'. IT IS NOW VISIBLE. */
     text-align: center;
-    padding: 5rem 1rem; /* More padding for a grander look */
+    padding: 5rem 1rem;
 }
 
-.hero h1 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 650px;
-    margin: 0 auto 2.5rem;
-    opacity: 0.9;
-}
+.hero h1 { font-size: 3.2rem; margin-bottom: 1rem; line-height: 1.2; }
+.hero p { font-size: 1.2rem; max-width: 650px; margin: 0 auto 2.5rem; opacity: 0.9; }
 
 .cta-button {
-    background: #FFC107; /* Gold/Yellow button */
-    color: #001f3f; /* Dark blue text */
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
+    background: #FFC107; color: #001f3f; padding: 15px 30px; border-radius: 5px;
+    text-decoration: none; font-weight: bold; font-size: 1.1rem;
 }
 
-.cta-button:hover {
-    background: #FFD54F;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-
-/* Expertise Matrix - Styles from previous fix */
-.expertise-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 3rem;
-}
-
-.expert-card { background: #fff; }
-
+/* Expertise Section */
+.expertise-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
 .expert-title h3 { font-size: 1.8rem; margin: 0 0 0.5rem; color: #00234E; }
-.expert-title p, .expert-body > p { margin: 0 0 1rem 0; color: #555; font-size: 1rem; }
-
-.ai-nexus {
-    margin-top: 1.5rem;
-    padding: 1.5rem;
-    background-color: #f0f8ff; /* Light blue */
-    border-radius: 8px;
-}
-
+.expert-title p, .expert-body > p { margin: 0 0 1rem 0; color: #555; }
+.ai-nexus { margin-top: 1.5rem; padding: 1.5rem; background-color: #f0f8ff; border-radius: 8px; }
 .ai-nexus h4 { color: #005A9E; font-size: 1.1rem; margin: 0 0 0.5rem 0; }
 
-/* Centaur Doctrine Section */
-#centaur-doctrine .slogan {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 3rem;
-}
-
-#centaur-doctrine .slogan .highlight {
-    color: #d9534f; /* Reddish highlight */
-    font-weight: 600;
-}
-
-.workflow-dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    text-align: center;
-}
-
-.step .step-icon {
-    background: #00234E;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
+/* Workflow Section */
+#centaur-doctrine .slogan { text-align: center; font-size: 1.5rem; color: #555; margin-bottom: 3rem; }
+.workflow-dashboard { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; text-align: center; }
+.step .step-icon { background: #00234E; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 1rem; font-size: 1.5rem; }
 .step h4 { font-size: 1.2rem; color: #00234E; margin-bottom: 0.5rem; }
 
-/* Contact Form */
+/* Contact Form - Styled to match final image */
+#contact {
+    background-color: #fff; /* White background for this section */
+}
+
 #contact-form {
     display: grid;
-    gap: 1rem;
+    gap: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -180,30 +99,46 @@ nav a:hover { color: #FFC107; }
 #contact-form input,
 #contact-form textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-family: inherit;
     font-size: 1rem;
 }
 
 #contact-form button {
-    background-color: #00234E;
+    background-color: #00234E; /* Dark Blue from Image */
     color: white;
-    padding: 12px 20px;
+    padding: 15px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-/* Footer */
+/* Footer - Corrected to match final image */
 .main-footer {
     text-align: center;
-    padding: 3rem 1rem;
-    background-color: #f8f9fa;
-    color: #6c757d;
+    padding: 2.5rem 1rem;
+    background-color: #001f3f; /* Dark Blue Background */
+    color: #fff; /* White Text */
+    position: relative;
 }
 
-.main-footer p { margin: 0.5rem 0; font-size: 0.9rem; line-height: 1.6; }
+.main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Decorative blue line as seen in the screenshot */
+.main-footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #0d6efd; /* Bright Blue */
+}
