@@ -1,62 +1,50 @@
-# Pyeongwon Law Firm - Hybrid AI Platform Blueprint
 
-## **1. Project Overview**
+# **법무법인 평원 - SEO 최적화 및 콘텐츠 확장 프로젝트**
 
-This document outlines the development plan for a cutting-edge web platform for Pyeongwon Law Firm. The platform will serve as a digital extension of the firm's expertise, showcasing its unique "Hybrid AI" approach that combines veteran legal insight with powerful artificial intelligence. The primary goal is to establish Pyeongwon as a technology-driven leader in the legal-tech space, attracting high-value clients in finance and real estate.
+## **1. 프로젝트 개요**
 
-The design will be authoritative and sophisticated, using a "Midnight Blue" and "Gold" color scheme to convey trust and value. The user experience will be seamless, guiding visitors through the firm's core competencies and unique AI-driven service offerings.
+본 프로젝트의 목표는 법무법인 평원 웹사이트를 대한민국 TOP 10 로펌으로 성장시키기 위한 SEO(검색엔진 최적화) 기반을 구축하는 것이다. 단일 페이지 구조에서 벗어나, 각 전문 분야와 법률 정보가 독립된 페이지를 가지는 '허브 앤 스포크(Hub-and-Spoke)' 모델을 도입하여 검색엔진 노출을 극대화하고, 지속적인 콘텐츠 생성을 통해 업계 최고의 권위와 신뢰를 확보한다.
 
-## **2. Core Features & Implemented Design**
+---
 
-### **Design & Aesthetics**
-*   **Color Palette**:
-    *   `--midnight-blue`: #001F3F (Primary background, conveying seriousness and trust)
-    *   `--gold`: #D4AF37 (Accent color for headlines, buttons, and key elements, symbolizing value and prestige)
-    *   `--light-gray`: #F5F5F5 (For text and secondary backgrounds)
-*   **Typography**:
-    *   **Headlines**: Serif font (e.g., 'Garamond', 'Times New Roman') for a classic, trustworthy feel.
-    *   **Body Text**: Sans-serif font (e.g., 'Roboto', 'Open Sans') for excellent readability.
-*   **Layout**: Modern, responsive layout using Flexbox and Grid. A clean, spacious design that is mobile-first.
-*   **Visuals**:
-    *   A hero section with a powerful background image or abstract graphic that represents the fusion of law and technology.
-    *   High-quality professional headshots for the key personnel.
-    *   Custom icons to represent the different service areas and features.
+## **2. 사이트 구조 설계 (허브 앤 스포크)**
 
-### **Implemented Sections & Functionality**
-*   **Header & Navigation**: A sticky header with the firm's logo and navigation links to key sections (Home, Expertise, Centaur Doctrine, Contact).
-*   **Hero Section**: A compelling headline like "The Future of Law: Where Human Insight Meets AI Precision." with a call-to-action button.
-*   **Expertise Matrix (Authority Section)**:
-    *   Dedicated cards for **Son Tae-geun** (Criminal/Investigation) and **Kim Min-soo** (Finance/RealEstate).
-    *   Each card details their extensive experience and explicitly states the "AI Nexus" - how AI amplifies their expertise.
-*   **Pyeongwon Centaur Doctrine**:
-    *   A visually engaging section explaining the 5-step workflow.
-    *   This will be represented as a dashboard-like UI or an infographic to clearly illustrate the synergy between human experts and AI.
-*   **Digital Doctrine (Core Features)**:
-    *   **Precision Guided Research**: A UI mockup of the tool, emphasizing its reliance on trusted government sources to prevent AI "hallucination."
-    *   **Client Care Automation**: A feature demonstration where users can input (or see an example of) complex legal text and receive a simplified, AI-generated summary.
-*   **Contact & Consultation Form**: A simple, elegant form for potential clients to request a consultation.
+*   **`index.html` (허브):** 법무법인 평원의 핵심 가치, AI 하이브리드 솔루션, 전체 전문 분야를 요약하여 소개하는 관문 페이지. 각 상세 페이지로 사용자를 안내하는 역할을 수행한다.
 
-## **3. Technical Stack**
+*   **`/expertise/` (전문 분야 디렉토리):**
+    *   `index.html`: 모든 전문 분야를 나열하고 간략히 소개하는 페이지.
+    *   `criminal-law.html`: '형사/수사' 분야에 대한 심층적인 정보, 관련 성공 사례, 차별화된 전략 등을 소개.
+    *   `real-estate-law.html`: '금융/부동산/투자' 분야에 대한 심층 정보, 관련 AI 예방법학 등을 소개.
+    *   *(추후 다른 전문 분야 페이지 추가 가능)*
 
-*   **Frontend**: HTML5, CSS3, JavaScript (ES6+ Modules)
-*   **Backend & Hosting**: Firebase (Hosting, Firestore for form submissions)
-*   **Analytics**: Google Analytics 4 (GA4) and Microsoft Clarity for user behavior tracking. **(Note: Awaiting `GA_MEASUREMENT_ID` and `CLARITY_PROJECT_ID` from the user after domain setup).**
+*   **`/blog/` (법률 정보/인사이트 디렉토리):**
+    *   `index.html`: 최신 글 목록을 보여주는 블로그 메인 페이지.
+    *   `template.html`: 새로운 글을 작성할 때 복사해서 사용할 수 있는 템플릿. SEO 태그와 구조화된 데이터가 미리 세팅되어 있다.
+    *   *(이곳에 매일 새로운 법률 정보, 판례 분석, 승소 사례 등이 `.html` 파일로 추가될 것)*
 
-## **4. Current Development Plan: Initial Build**
+*   **`/about.html` (로펌/변호사 소개):**
+    *   손태근 대표 변호사, 김민수 법률총괄 팀장의 상세 프로필, 경력, 철학 등을 소개하여 신뢰성(E-A-T)을 높인다.
 
-The following steps will be executed to create the initial version of the website.
+*   **`/contact.html` (상담 문의):**
+    *   기존의 상담 문의 양식을 독립된 페이지로 분리하여 사용자의 집중도를 높이고, 전환율을 측정하기 용이하게 만든다.
 
-1.  **Create `index.html`**: Structure the entire website with semantic HTML, including all sections outlined above.
-2.  **Create `style.css`**:
-    *   Implement the Midnight Blue and Gold color scheme with CSS Variables.
-    *   Apply the specified typography.
-    *   Style all sections, ensuring a responsive, mobile-first design.
-    *   Create the card layout for the "Expertise Matrix."
-    *   Design the "Centaur Doctrine" workflow visualization.
-3.  **Create `main.js`**:
-    *   Add placeholder code for Firebase initialization.
-    *   Implement smooth scrolling for navigation links.
-    *   Add interactivity to the "Client Care Automation" summarizer tool.
-    *   Handle the submission logic for the contact form (connecting to Firestore).
-4.  **Integrate Analytics**: Add the tracking scripts for GA4 and Clarity to `index.html`.
-5.  **Configure Firebase**: Set up the necessary Firebase configuration files (`.firebaserc` and `firebase.json`) for hosting and add firebase to `mcp.json`.
+---
+
+## **3. SEO 실행 계획 (현재 단계)**
+
+### **1단계: SEO 뼈대 구축**
+
+1.  **[완료] `blueprint.md` 생성:** 프로젝트의 목표와 계획을 정의.
+2.  **`robots.txt` 및 `sitemap.xml` 생성:** 검색엔진 크롤러를 위한 가이드 파일을 생성.
+3.  **디렉토리 구조 생성:** `expertise` 및 `blog` 디렉토리를 생성.
+4.  **`index.html` 리팩토링:**
+    *   새로운 구조에 맞게 네비게이션 메뉴 수정 (`/expertise/`, `/blog/` 등).
+    *   SEO 메타 태그 (Description, Open Graph) 추가.
+    *   `LawFirm` 유형의 JSON-LD 구조화된 데이터 추가.
+5.  **신규 페이지 뼈대 생성:**
+    *   `about.html`, `contact.html`
+    *   `expertise/index.html`, `expertise/criminal-law.html`, `expertise/real-estate-law.html`
+    *   `blog/index.html`, `blog/template.html`
+    *   각 신규 페이지에 고유한 `<title>`, `<meta name="description">`, 오픈 그래프 태그, 그리고 페이지 성격에 맞는 JSON-LD(예: `Article`, `Person`) 구조화 데이터 뼈대를 추가.
+6.  **기존 `main.js`, `style.css` 분리 및 적용:** 모든 페이지에 일관된 스타일과 기능이 적용되도록 링크를 수정하고 파일을 정리.
+

@@ -1,0 +1,59 @@
+[debug] [2026-02-17T14:35:41.223Z] ----------------------------------------------------------------------
+[debug] [2026-02-17T14:35:41.227Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gm9mcvzb17vv8cla08khrg29vxn3sq4r-firebase-tools-15.1.0/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2026-02-17T14:35:41.227Z] CLI Version:   15.1.0
+[debug] [2026-02-17T14:35:41.227Z] Platform:      linux
+[debug] [2026-02-17T14:35:41.227Z] Node Version:  v20.19.1
+[debug] [2026-02-17T14:35:41.228Z] Time:          Tue Feb 17 2026 14:35:41 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-02-17T14:35:41.228Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-17T14:35:43.171Z] Checked if tokens are valid: false, expires at: 1771331435244
+[debug] [2026-02-17T14:35:43.172Z] Checked if tokens are valid: false, expires at: 1771331435244
+[debug] [2026-02-17T14:35:43.172Z] > refreshing access token with scopes: []
+[debug] [2026-02-17T14:35:43.175Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-17T14:35:43.175Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-17T14:35:43.319Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-17T14:35:43.319Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-17T14:35:43.332Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/finance-law-360-46784361 [none]
+[debug] [2026-02-17T14:35:44.371Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/finance-law-360-46784361 200
+[debug] [2026-02-17T14:35:44.371Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/finance-law-360-46784361 {"workspaceId":"finance-law-360-46784361","name":"Finance Law 360","workspaceRedirectUrl":"firebase-finance-law-360-1771305401294.cluster-edb2jv34dnhjisxuq5m7l37ccy.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2026-02-17T05:16:56.638449Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-3814400460361088000@monospace-2.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"daniedad329@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_html.svg","templateArgs":"{\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/blank-web","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtZmluYW5jZS1sYXctMzYwLTE3NzEzMDU0MDEyOTQuY2x1c3Rlci1lZGIyanYzNGRuaGppc3h1cTVtN2wzN2NjeS5jbG91ZHdvcmtzdGF0aW9ucy5kZXYiLCJpYXQiOjE3NzEzMzg5NDQsImV4cCI6MTc3MTQyNTM0NH0.HHtiDd8C3Ax7PIVIQ8rJGMtS-tBj8sijz_FmCSSHEcTOLgQay2KugUzNT6UeuRpMP68XgjwZjRKq-9qKn0KqIFOMZ4FKnPRRLgEP3YPURnAh9cMD-PT2m45pMdUeQYLcpJZrARk5PakU0xMeyEZtDqu8zQTfjo_pgDrvRbTLImILgsMQLP0p7tAbQneEoXuyFqk6hO7vjO1Uq3gXAM2axIUdDaNut7I-FV6AxPuL7PT24dKGnlPi0X_tFby7sy9IAo3ewglS1_j6w-bzbCEiZJGFgU5Pvf9TXVRKaVOvuKSaQce0Meg0o238jl7OFubHCeq0-DnuvT1qubH_FDufoQ"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/finance-law-360
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-17T14:35:44.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T14:35:44.378Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-17T14:35:44.379Z] Checked if tokens are valid: true, expires at: 1771342542320
+[debug] [2026-02-17T14:35:44.379Z] Checked if tokens are valid: true, expires at: 1771342542320
+[debug] [2026-02-17T14:35:44.379Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/k-lawyers [none]
+[debug] [2026-02-17T14:35:44.636Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/k-lawyers 200
+[debug] [2026-02-17T14:35:44.636Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/k-lawyers {"projectId":"k-lawyers","projectNumber":"27799556732","displayName":"k-lawyers","name":"projects/k-lawyers","resources":{"hostingSite":"k-lawyers"},"state":"ACTIVE","etag":"1_96888640-55a6-41de-8d58-8a2055cd60e0"}
+[info] i  Using project k-lawyers (k-lawyers) . 
+[info] 
+=== Hosting Setup
+[debug] [2026-02-17T14:35:44.648Z] Checked if tokens are valid: true, expires at: 1771342542320
+[debug] [2026-02-17T14:35:44.648Z] Checked if tokens are valid: true, expires at: 1771342542320
+[debug] [2026-02-17T14:35:44.649Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/k-lawyers [none]
+[debug] [2026-02-17T14:35:44.888Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/k-lawyers 200
+[debug] [2026-02-17T14:35:44.888Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/k-lawyers {"projectId":"k-lawyers","projectNumber":"27799556732","displayName":"k-lawyers","name":"projects/k-lawyers","resources":{"hostingSite":"k-lawyers"},"state":"ACTIVE","etag":"1_96888640-55a6-41de-8d58-8a2055cd60e0"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
