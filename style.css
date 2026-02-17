@@ -1,5 +1,5 @@
 /*
-Emergency Fix: Styles based *directly* on the user's final screenshot.
+ULTIMATE FIX: Merging Hero section styles with the main content styles.
 */
 
 /* General Body & Layout */
@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
     margin: 0;
     color: #333;
-    background-color: #f8f9fa; /* Light grey background from screenshot */
+    background-color: #f8f9fa; /* Light grey background for the main content area */
 }
 
 main {
@@ -37,10 +37,10 @@ h2 {
     font-weight: 600;
 }
 
-/* Header - Assuming it's mostly correct, focus on main content */
+/* Header, Navigation & HERO SECTION RESTORED */
 header {
-    background: #fff; /* White background */
-    color: #333;
+    background: #001f3f; /* DARK BLUE from the hero screenshot */
+    color: #fff;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -53,53 +53,85 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto 2rem; /* Add margin to separate from hero content */
     padding: 0 2rem;
 }
 
-nav .logo { font-size: 1.5rem; font-weight: bold; color: #00234E; }
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White logo text on dark header */
+}
+
 nav ul { list-style: none; display: flex; }
 nav ul li { margin-left: 2rem; }
-nav a { color: #333; text-decoration: none; font-weight: 500; }
+nav a {
+    color: #fff; /* White nav links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+nav a:hover { color: #FFC107; }
 
-.hero { display: none; } /* The final version screenshot does not have the hero section, hiding it for now */
+.hero {
+    /* REMOVED 'display: none'. IT IS NOW VISIBLE. */
+    text-align: center;
+    padding: 5rem 1rem; /* More padding for a grander look */
+}
 
-/* Expertise Matrix - Based on Screenshot */
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background: #FFC107; /* Gold/Yellow button */
+    color: #001f3f; /* Dark blue text */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #FFD54F;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Expertise Matrix - Styles from previous fix */
 .expertise-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 3rem;
 }
 
-.expert-card { /* This is the container for each expert */
-    background: #fff; /* White background */
-    /* No border or shadow per screenshot, spacing is key */
-}
+.expert-card { background: #fff; }
 
-.expert-title h3 {
-    font-size: 1.8rem;
-    margin: 0 0 0.5rem;
-    color: #00234E;
-}
-
-.expert-title p, .expert-body > p {
-    margin: 0 0 1rem 0;
-    color: #555;
-    font-size: 1rem;
-}
+.expert-title h3 { font-size: 1.8rem; margin: 0 0 0.5rem; color: #00234E; }
+.expert-title p, .expert-body > p { margin: 0 0 1rem 0; color: #555; font-size: 1rem; }
 
 .ai-nexus {
     margin-top: 1.5rem;
     padding: 1.5rem;
-    background-color: #f0f8ff; /* Light blue background from screenshot */
+    background-color: #f0f8ff; /* Light blue */
     border-radius: 8px;
 }
 
-.ai-nexus h4 {
-    color: #005A9E;
-    font-size: 1.1rem;
-    margin: 0 0 0.5rem 0;
-}
+.ai-nexus h4 { color: #005A9E; font-size: 1.1rem; margin: 0 0 0.5rem 0; }
 
 /* Centaur Doctrine Section */
 #centaur-doctrine .slogan {
@@ -110,7 +142,7 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
 }
 
 #centaur-doctrine .slogan .highlight {
-    color: #d9534f; /* Reddish highlight from screenshot */
+    color: #d9534f; /* Reddish highlight */
     font-weight: 600;
 }
 
@@ -135,11 +167,7 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
     font-weight: bold;
 }
 
-.step h4 {
-    font-size: 1.2rem;
-    color: #00234E;
-    margin-bottom: 0.5rem;
-}
+.step h4 { font-size: 1.2rem; color: #00234E; margin-bottom: 0.5rem; }
 
 /* Contact Form */
 #contact-form {
@@ -170,16 +198,12 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
     font-weight: bold;
 }
 
-/* Footer - Based on Screenshot */
+/* Footer */
 .main-footer {
     text-align: center;
     padding: 3rem 1rem;
-    background-color: #f8f9fa; /* Matching the light grey body background */
-    color: #6c757d; /* Softer text color from screenshot */
+    background-color: #f8f9fa;
+    color: #6c757d;
 }
 
-.main-footer p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
+.main-footer p { margin: 0.5rem 0; font-size: 0.9rem; line-height: 1.6; }
