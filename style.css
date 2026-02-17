@@ -1,3 +1,4 @@
+
 /* General Body Styles */
 body {
     font-family: sans-serif;
@@ -98,12 +99,12 @@ section h2 {
     color: #001f3f;
 }
 
-/* Expertise Matrix */
+/* Expertise Matrix - MODIFIED FOR VERTICAL LAYOUT */
 .expertise-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 .expert-card {
@@ -111,7 +112,8 @@ section h2 {
     border-left: 5px solid #003366;
     padding: 30px;
     border-radius: 8px;
-    width: 45%;
+    width: 90%; /* Adjust width for single column */
+    max-width: 800px; /* Prevent cards from being too wide on large screens */
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
@@ -214,7 +216,22 @@ section h2 {
     background-color: #001f3f;
 }
 
-/* Footer */
+/* --- NEW MAIN FOOTER STYLES --- */
+.main-footer {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    line-height: 1.8;
+}
+
+.main-footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Original Footer (Copyright) */
 footer {
     text-align: center;
     padding: 20px 5%;
