@@ -1,16 +1,46 @@
-/* General Body Styles */
+/*
+Emergency Fix: Styles based *directly* on the user's final screenshot.
+*/
+
+/* General Body & Layout */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     color: #333;
-    background-color: #f4f4f4; 
+    background-color: #f8f9fa; /* Light grey background from screenshot */
 }
 
-/* Header and Navigation */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #00234E;
+    font-weight: 600;
+}
+
+/* Header - Assuming it's mostly correct, focus on main content */
 header {
-    background: #00234E;
-    color: #fff;
+    background: #fff; /* White background */
+    color: #333;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -27,140 +57,72 @@ nav {
     padding: 0 2rem;
 }
 
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+nav .logo { font-size: 1.5rem; font-weight: bold; color: #00234E; }
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 2rem; }
+nav a { color: #333; text-decoration: none; font-weight: 500; }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
+.hero { display: none; } /* The final version screenshot does not have the hero section, hiding it for now */
 
-nav ul li {
-    margin-left: 2rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.hero {
-    text-align: center;
-    padding: 4rem 1rem;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-}
-
-.cta-button {
-    background: #FFC107; /* A vibrant call-to-action color */
-    color: #333;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #FFD54F;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-/* Main Content */
-main {
-    max-width: 1100px;
-    margin: 2rem auto;
-    padding: 0 2rem;
-    background: #fff; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
-    border-radius: 8px;
-}
-
-section {
-    padding: 2rem 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-section:last-child {
-    border-bottom: none;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: #00234E;
-}
-
-/* Expertise Matrix */
+/* Expertise Matrix - Based on Screenshot */
 .expertise-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
 }
 
-.expert-card {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.expert-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+.expert-card { /* This is the container for each expert */
+    background: #fff; /* White background */
+    /* No border or shadow per screenshot, spacing is key */
 }
 
 .expert-title h3 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin: 0 0 0.5rem;
-    color: #003366;
+    color: #00234E;
 }
 
-.expert-title p {
-    margin: 0;
-    font-style: italic;
+.expert-title p, .expert-body > p {
+    margin: 0 0 1rem 0;
     color: #555;
+    font-size: 1rem;
 }
 
-.expert-body .ai-nexus {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px dashed #ccc;
+.ai-nexus {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #f0f8ff; /* Light blue background from screenshot */
+    border-radius: 8px;
 }
 
 .ai-nexus h4 {
     color: #005A9E;
     font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
 }
 
+/* Centaur Doctrine Section */
+#centaur-doctrine .slogan {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
 
-/* Workflow Dashboard */
+#centaur-doctrine .slogan .highlight {
+    color: #d9534f; /* Reddish highlight from screenshot */
+    font-weight: 600;
+}
+
 .workflow-dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     text-align: center;
 }
 
 .step .step-icon {
-    background: #003366;
+    background: #00234E;
     color: white;
     width: 50px;
     height: 50px;
@@ -175,10 +137,9 @@ h2 {
 
 .step h4 {
     font-size: 1.2rem;
-    color: #003366;
+    color: #00234E;
     margin-bottom: 0.5rem;
 }
-
 
 /* Contact Form */
 #contact-form {
@@ -188,7 +149,7 @@ h2 {
     margin: 0 auto;
 }
 
-#contact-form input, 
+#contact-form input,
 #contact-form textarea {
     width: 100%;
     padding: 12px;
@@ -203,28 +164,22 @@ h2 {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: bold;
-    transition: background-color 0.3s;
 }
 
-#contact-form button:hover {
-    background-color: #003366;
-}
-
-/* Footer */
+/* Footer - Based on Screenshot */
 .main-footer {
     text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
-    background-color: #001f3f; /* Dark blue background */
-    color: #ffffff; /* White text */
+    padding: 3rem 1rem;
+    background-color: #f8f9fa; /* Matching the light grey body background */
+    color: #6c757d; /* Softer text color from screenshot */
 }
 
 .main-footer p {
     margin: 0.5rem 0;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
