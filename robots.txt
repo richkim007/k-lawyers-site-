@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://k-lawyers.com/sitemap.xml
