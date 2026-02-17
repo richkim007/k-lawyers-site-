@@ -1,1 +1,225 @@
-\/* General Body Styles *\/ \nbody { \n font-family: sans-serif; \n margin: 0; \n color: #333; \n background-color: #f4f4f4; \n} \n\/* Header & Navigation *\/ \nheader { \n background: linear-gradient(to right, #001f3f, #003366); \n color: white; \n padding: 1rem 5%; \n text-align: center; \n} \nnav { \n display: flex; \n justify-content: space-between; \n align-items: center; \n} \n.logo { \n font-size: 1.8rem; \n font-weight: bold; \n} \nnav ul { \n list-style: none; \n margin: 0; \n padding: 0; \n display: flex; \n} \nnav ul li { \n margin-left: 25px; \n} \nnav a { \n color: white; \n text-decoration: none; \n font-size: 1rem; \n transition: color 0.3s; \n} \nnav a:hover { \n color: #f0a500; \n} \n\/* Hero Section *\/ \n.hero { \n padding: 80px 20px; \n} \n.hero h1 { \n font-size: 3rem; \n margin-bottom: 20px; \n line-height: 1.3; \n} \n.hero p { \n font-size: 1.2rem; \n max-width: 700px; \n margin: 0 auto 30px; \n} \n.cta-button { \n background-color: #f0a500; \n color: #001f3f; \n padding: 15px 35px; \n border-radius: 5px; \n text-decoration: none; \n font-weight: bold; \n transition: background-color 0.3s; \n} \n.cta-button:hover { \n background-color: #ffc107; \n} \n\/* Main Content Sections *\/ \nmain { \n padding: 40px 5%; \n} \nsection { \n margin-bottom: 60px; \n background: white; \n padding: 40px; \n border-radius: 8px; \n box-shadow: 0 4px 15px rgba(0,0,0,0.08); \n} \nsection h2 { \n text-align: center; \n font-size: 2.5rem; \n margin-bottom: 40px; \n color: #001f3f; \n} \n\/* Expertise Matrix *\/ \n.expertise-container { \n display: flex; \n justify-content: space-around; \n gap: 30px; \n flex-wrap: wrap; \n} \n.expert-card { \n background: #f9f9f9; \n border-left: 5px solid #003366; \n padding: 30px; \n border-radius: 8px; \n width: 45%; \n box-shadow: 0 2px 8px rgba(0,0,0,0.05); \n} \n.expert-title h3 { \n margin-top: 0; \n font-size: 1.8rem; \n color: #001f3f; \n} \n.expert-title p { \n font-style: italic; \n color: #555; \n margin-top: -10px; \n margin-bottom: 20px; \n} \n.ai-nexus { \n background: #eef3f8; \n padding: 20px; \n border-radius: 5px; \n margin-top: 20px; \n} \n.ai-nexus h4 { \n color: #003366; \n margin-top: 0; \n} \n\/* Centaur Doctrine/Hybrid Solution *\/ \n#centaur-doctrine .slogan { \n text-align: center; \n font-size: 1.5rem; \n color: #555; \n margin-bottom: 40px; \n} \n.workflow-dashboard { \n display: grid; \n grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); \n gap: 30px; \n} \n.step { \n text-align: center; \n padding: 20px; \n} \n.step-icon { \n background-color: #003366; \n color: white; \n width: 50px; \n height: 50px; \n line-height: 50px; \n border-radius: 50%; \n margin: 0 auto 15px; \n font-size: 1.5rem; \n font-weight: bold; \n} \n.step h4 { \n font-size: 1.3rem; \n color: #001f3f; \n margin-bottom: 10px; \n} \n\/* Contact Form *\/ \n#contact-form { \n display: flex; \n flex-direction: column; \n max-width: 600px; \n margin: 0 auto; \n} \n#contact-form input, #contact-form textarea { \n margin-bottom: 20px; \n padding: 15px; \n border: 1px solid #ccc; \n border-radius: 5px; \n font-size: 1rem; \n} \n#contact-form button { \n background-color: #003366; \n color: white; \n padding: 15px; \n border: none; \n border-radius: 5px; \n font-size: 1.2rem; \n cursor: pointer; \n transition: background-color 0.3s; \n} \n#contact-form button:hover { \n background-color: #001f3f; \n} \n\/* Footer *\/ \nfooter { \n text-align: center; \n padding: 20px 5%; \n background: #001f3f; \n color: #aaa; \n} \n\/* Responsive Design *\/ \n@media (max-width: 768px) { \n .hero h1 { font-size: 2.2rem; } \n .expert-card { width: 100%; } \n nav ul { display: none; } /* Basic responsive nav handling *\/ \n}
+/* General Body Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header & Navigation */
+header {
+    background: linear-gradient(to right, #001f3f, #003366);
+    color: white;
+    padding: 1rem 5%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cta-button {
+    background-color: #f0a500;
+    color: #001f3f;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffc107;
+}
+
+/* Main Content Sections */
+main {
+    padding: 40px 5%;
+}
+
+section {
+    margin-bottom: 60px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #001f3f;
+}
+
+/* Expertise Matrix */
+.expertise-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.expert-card {
+    background: #f9f9f9;
+    border-left: 5px solid #003366;
+    padding: 30px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.expert-title h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #001f3f;
+}
+
+.expert-title p {
+    font-style: italic;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.ai-nexus {
+    background: #eef3f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.ai-nexus h4 {
+    color: #003366;
+    margin-top: 0;
+}
+
+/* Centaur Doctrine/Hybrid Solution */
+#centaur-doctrine .slogan {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.workflow-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    text-align: center;
+    padding: 20px;
+}
+
+.step-icon {
+    background-color: #003366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step h4 {
+    font-size: 1.3rem;
+    color: #001f3f;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #001f3f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 5%;
+    background: #001f3f;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    .expert-card { width: 100%; }
+    nav ul { display: none; } /* Basic responsive nav handling */
+}
