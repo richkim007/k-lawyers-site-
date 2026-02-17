@@ -1,1 +1,272 @@
-/* Add styles here */
+:root {
+    --midnight-blue: #001F3F;
+    --gold: #D4AF37;
+    --light-gray: #f4f4f4;
+    --text-color: #333;
+    --headline-font: 'Georgia', 'Times New Roman', serif;
+    --body-font: 'Roboto', 'Helvetica', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: var(--light-gray);
+}
+
+header {
+    background: var(--midnight-blue);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: var(--headline-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-family: var(--headline-font);
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.cta-button {
+    background: var(--gold);
+    color: var(--midnight-blue);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background: #c5a230;
+}
+
+main {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+section h2 {
+    font-family: var(--headline-font);
+    font-size: 2.5rem;
+    color: var(--midnight-blue);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.expert-card {
+    background: white;
+    border-left: 5px solid var(--midnight-blue);
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.expert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.expert-title h3 {
+    font-family: var(--headline-font);
+    font-size: 1.8rem;
+    color: var(--midnight-blue);
+    margin: 0 0 0.5rem 0;
+}
+
+.expert-title p {
+    font-size: 1.1rem;
+    color: var(--gold);
+    font-weight: bold;
+    margin: 0;
+}
+
+.expert-body {
+    margin-top: 1.5rem;
+}
+
+.ai-nexus {
+    background: #f0f5ff;
+    border-left: 4px solid var(--gold);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.ai-nexus h4 {
+    font-family: var(--headline-font);
+    color: var(--midnight-blue);
+    margin: 0 0 0.5rem 0;
+}
+
+#centaur-doctrine h2 {
+    display: block;
+}
+
+.workflow-dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: white;
+    padding: 2rem;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    border-top: 5px solid var(--gold);
+}
+
+.step-icon {
+    background: var(--midnight-blue);
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step h4 {
+    font-family: var(--headline-font);
+    color: var(--midnight-blue);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    display: block;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+#contact-form button {
+    background: var(--midnight-blue);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #003366;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--midnight-blue);
+    color: var(--light-gray);
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .workflow-dashboard {
+        flex-direction: column;
+    }
+}
