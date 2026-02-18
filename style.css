@@ -1,4 +1,4 @@
-/* === K-Lawyers Redefined CSS v2.1 | E-Book Section Added === */
+/* === K-Lawyers Redefined CSS v2.2 | Section Contrast Enhanced === */
 
 /* --- 1. Design System & Global Styles --- */
 :root {
@@ -34,6 +34,9 @@
     font-style: normal;
 }
 
+html {
+    overflow-y: scroll; /* Force vertical scrollbar */
+}
 
 body { 
     font-family: var(--font-sans);
@@ -41,7 +44,8 @@ body {
     margin: 0;
     color: var(--text-dark);
     background-color: var(--bg-light);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23dee2e6' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23dee2e6' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'/%3E%3C/svg%3E");
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 main { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
@@ -63,7 +67,7 @@ header {
 }
 
 .header-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem; }
-nav .logo a { font-size: 1.6rem; font-weight: 700; color: var(--text-light); text-decoration: none; }
+.logo a { font-size: 1.6rem; font-weight: 700; color: var(--text-light); text-decoration: none; }
 nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
 nav ul li { margin-left: 2.5rem; }
 nav ul a { color: var(--text-light); text-decoration: none; font-weight: 400; font-size: 1.05rem; opacity: 0.9; transition: opacity 0.2s; }
@@ -118,31 +122,176 @@ nav ul a:hover { opacity: 1; }
 .step h4 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 .step p { font-size: 0.95rem; color: var(--text-muted); }
 
-/* Contact Form Section */
-#contact { background: var(--primary-dark); color: var(--text-light); padding: 6rem 2rem; }
-#contact h2 { color: var(--text-light); }
-#contact-form { display: grid; gap: 1.5rem; max-width: 750px; margin: 0 auto; }
-.form-group label { display: block; font-weight: 700; margin-bottom: 0.75rem; opacity: 0.9; }
-.form-group input, .form-group textarea { width: 100%; padding: 16px 20px; border: 1px solid #495f7a; border-radius: var(--border-radius); font-family: inherit; font-size: 1rem; background: #002b4f; color: var(--text-light); transition: border-color 0.2s, box-shadow 0.2s; }
-.form-group input::placeholder, .form-group textarea::placeholder { color: #9ab3d0; opacity: 0.7; }
-.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent-gold); box-shadow: 0 0 0 4px var(--accent-gold-glow); }
-.privacy-agreement { display: flex; align-items: center; font-size: 0.9rem; opacity: 0.8; }
-.privacy-agreement input { margin-right: 1rem; }
-#contact-form button.cta-button { font-size: 1.25rem; margin-top: 1rem; }
+/* --- Risk Diagnosis Form Section (Dark) --- */
+#risk-diagnosis {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 6rem 2rem;
+}
+#risk-diagnosis h2 {
+    color: var(--text-light);
+}
+#risk-diagnosis-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: center;
+}
+#risk-diagnosis .form-group {
+    width: 100%;
+}
+#risk-diagnosis-form select,
+#risk-diagnosis-form input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-white);
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: var(--text-dark);
+}
+#risk-diagnosis-form select {
+    cursor: pointer;
+}
+
+/* --- Contact Form Section (Light) --- */
+#contact {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    padding: 6rem 2rem;
+}
+#contact h2 {
+    color: var(--primary-dark);
+}
+#contact-form {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+#contact .form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+#contact .form-group input, 
+#contact .form-group textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--bg-white);
+    color: var(--text-dark);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+#contact .form-group input::placeholder, 
+#contact .form-group textarea::placeholder {
+    color: var(--text-muted);
+}
+#contact .form-group input:focus, 
+#contact .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.2);
+}
+#contact .privacy-agreement {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+#contact .privacy-agreement input {
+    margin-right: 1rem;
+}
+#contact-form button.cta-button {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
 
 /* --- 5. Footer --- */
 .main-footer { text-align: center; padding: 4rem 2rem; background: #001224; color: var(--text-light); }
 .main-footer p { margin: 0.5rem 0; opacity: 0.7; font-size: 0.9rem; }
 
+/* --- Location Section --- */
+#location {
+    background-color: var(--bg-white);
+    padding: 6rem 2rem;
+}
+.location-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+}
+.location-info {
+    flex-basis: 45%;
+}
+.location-map {
+    flex-basis: 55%;
+    flex-shrink: 0;
+}
+.location-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.location-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark);
+}
+.location-info i {
+    color: var(--accent-gold);
+    width: 20px;
+    text-align: center;
+}
+.location-info a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.location-info a:hover {
+    color: var(--accent-gold);
+}
+.location-info hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+}
+.location-info h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.location-map iframe {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-deep);
+}
+
 /* --- 6. Responsive Design --- */
 @media (max-width: 992px) { 
     .expertise-container { grid-template-columns: 1fr; }
+    #risk-diagnosis-form {
+        grid-template-columns: 1fr; /* Stack form elements */
+    }
+    .location-layout {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
 
 @media (max-width: 768px) {
-    nav ul { display: none; }
     .header-container { padding: 1rem; }
     main { padding: 0 1rem; }
     section { padding: 4rem 0; }
     .hero { padding: 5rem 1rem; }
+    nav ul { display: none; }
 }

@@ -57,3 +57,262 @@ Before we get started, keep in mind:
 [info] will contain Hosting assets to be uploaded with firebase deploy. If you
 [info] have a build process for your assets, use your build's output directory.
 [info] 
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:39:09.989Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:10.005Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:39:10.008Z] Checked if tokens are valid: false, expires at: 1771385377880
+[debug] [2026-02-18T08:39:10.009Z] Checked if tokens are valid: false, expires at: 1771385377880
+[debug] [2026-02-18T08:39:10.009Z] > refreshing access token with scopes: []
+[debug] [2026-02-18T08:39:10.012Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-18T08:39:10.013Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-18T08:39:10.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:10.109Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:39:10.109Z] Checked if tokens are valid: false, expires at: 1771385377880
+[debug] [2026-02-18T08:39:10.110Z] Checked if tokens are valid: false, expires at: 1771385377880
+[debug] [2026-02-18T08:39:10.110Z] > refreshing access token with scopes: []
+[debug] [2026-02-18T08:39:10.111Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-18T08:39:10.111Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-18T08:39:10.193Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-18T08:39:10.195Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-18T08:39:10.318Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:39:10.350Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-18T08:39:10.351Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-18T08:39:10.464Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:39:11.439Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:39:11.441Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T08:39:11.470Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.470Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.509Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.509Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.510Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.511Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.511Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T08:39:11.511Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:39:11.515Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T08:39:11.515Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:39:11.521Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [none]
+[debug] [2026-02-18T08:39:11.521Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:39:11.622Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:39:11.624Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T08:39:11.636Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.636Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.664Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.665Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.668Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.669Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:11.669Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T08:39:11.670Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:39:11.673Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T08:39:11.674Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:39:11.677Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [none]
+[debug] [2026-02-18T08:39:11.678Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:39:12.593Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com 403
+[debug] [2026-02-18T08:39:12.593Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [omitted]
+[debug] [2026-02-18T08:39:12.623Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T08:39:12.624Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T08:39:12.656Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T08:39:12.660Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:39:12.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:12.692Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:39:12.693Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:12.693Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:12.693Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:39:12.743Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com 403
+[debug] [2026-02-18T08:39:12.744Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [omitted]
+[debug] [2026-02-18T08:39:12.772Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T08:39:12.776Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T08:39:12.850Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T08:39:12.853Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T08:39:13.776Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:39:13.780Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:39:13.799Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:13.799Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:39:13.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:13.857Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:39:13.857Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:13.857Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:13.857Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:39:13.890Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:13.890Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:39:13.891Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:13.891Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:39:13.891Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:39:14.986Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:39:14.988Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:39:14.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:14.996Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:39:15.001Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:39:15.001Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:39:15.008Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:39:15.009Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:43:53.957Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:43:53.959Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:43:53.962Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:53.962Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:53.963Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:43:53.963Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:43:53.964Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:53.964Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:53.966Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:43:54.052Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:43:55.261Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:43:55.264Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T08:43:55.305Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.306Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.368Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.368Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.371Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.371Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.371Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T08:43:55.371Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:43:55.378Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T08:43:55.378Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:43:55.382Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [none]
+[debug] [2026-02-18T08:43:55.382Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:43:55.472Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:43:55.472Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T08:43:55.496Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.497Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.532Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.532Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.537Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.537Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:55.537Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T08:43:55.538Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:43:55.552Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T08:43:55.552Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:43:55.567Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [none]
+[debug] [2026-02-18T08:43:55.567Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:43:56.642Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T08:43:56.643Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T08:43:56.687Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T08:43:56.688Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T08:43:56.751Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com 403
+[debug] [2026-02-18T08:43:56.756Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:43:56.787Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:43:56.787Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:43:56.788Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:56.788Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:43:56.788Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:43:56.900Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T08:43:56.901Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T08:43:56.920Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com 403
+[debug] [2026-02-18T08:43:56.924Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [omitted]
+[debug] [2026-02-18T08:43:56.960Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T08:43:56.961Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T08:43:57.838Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:44:34.575Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:34.576Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:44:34.579Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:34.581Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:34.582Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:34.583Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:44:34.584Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:34.585Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:34.588Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:44:34.655Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:44:35.136Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:44:35.137Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T08:44:35.169Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.170Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.201Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.201Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.202Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.202Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.202Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T08:44:35.203Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:44:35.211Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T08:44:35.211Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:44:35.219Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [none]
+[debug] [2026-02-18T08:44:35.219Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:44:35.770Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:44:35.771Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T08:44:35.773Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.773Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.786Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.786Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.787Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.787Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:35.787Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T08:44:35.788Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:44:35.793Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T08:44:35.793Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:44:35.797Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [none]
+[debug] [2026-02-18T08:44:35.798Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com  x-goog-user-project=k-lawyers
+[debug] [2026-02-18T08:44:36.299Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T08:44:36.299Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T08:44:36.313Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com 403
+[debug] [2026-02-18T08:44:36.313Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [omitted]
+[debug] [2026-02-18T08:44:36.324Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T08:44:36.325Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T08:44:36.791Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T08:44:36.791Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T08:44:36.803Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com 403
+[debug] [2026-02-18T08:44:36.804Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebaseio.com [omitted]
+[debug] [2026-02-18T08:44:36.830Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T08:44:36.831Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/k-lawyers/services/firebasedataconnect.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:44:36.840Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:36.840Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:44:36.840Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:36.840Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:36.841Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:44:37.910Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:44:37.911Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:44:37.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:37.917Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:44:37.945Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:37.945Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:44:37.945Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:37.945Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:37.946Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:44:37.963Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:37.963Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:44:37.963Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:37.965Z] Checked if tokens are valid: true, expires at: 1771407549352
+[debug] [2026-02-18T08:44:37.966Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo [none]
+[debug] [2026-02-18T08:44:39.009Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:44:39.009Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:44:39.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:39.012Z] > authorizing via signed-in user (daniedad329@gmail.com)
+[debug] [2026-02-18T08:44:39.096Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo 200
+[debug] [2026-02-18T08:44:39.096Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/k-lawyers/billingInfo {"name":"projects/k-lawyers/billingInfo","projectId":"k-lawyers","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T08:44:39.102Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T08:44:39.102Z] > authorizing via signed-in user (daniedad329@gmail.com)
