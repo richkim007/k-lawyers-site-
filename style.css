@@ -1,4 +1,4 @@
-/* === K-Lawyers Redefined CSS v3.3 | Slimmer Form === */
+/* === K-Lawyers Redefined CSS v3.4 | Mobile Form Fix === */
 
 /* --- 1. Design System & Global Styles --- */
 :root {
@@ -8,8 +8,8 @@
     --accent-gold: #FFC107;
     --accent-gold-glow: rgba(255, 193, 7, 0.5);
     --text-light: #f8f9fa;
-    --text-dark: #1a1a1a; /* Darker for better contrast */
-    --text-muted: #5a5a5a; /* Darker for better contrast */
+    --text-dark: #1a1a1a; 
+    --text-muted: #5a5a5a; 
     --bg-light: #f8f9fa;
     --bg-white: #ffffff;
     --border-color: #dee2e6;
@@ -20,7 +20,6 @@
     --border-radius: 12px;
 }
 
-/* Font Faces */
 @font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
 @font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff'); font-weight: 700; font-style: normal; }
 
@@ -45,7 +44,6 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--primary-dark); line-heig
 h1 { font-size: clamp(3rem, 6vw, 4.5rem); text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
 h2 { font-size: clamp(2.4rem, 5vw, 3.2rem); text-align: center; margin: 0 0 4rem; }
 
-/* --- 2. Header, Nav, Hero --- */
 header { background: var(--primary-dark); color: var(--text-light); box-shadow: 0 2px 10px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 1020; }
 .header-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem; }
 .logo a { font-size: 1.8rem; font-weight: 700; color: var(--text-light); text-decoration: none; }
@@ -64,13 +62,11 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
 .hero h1 { color: var(--text-light); }
 .hero p { font-size: 1.4rem; max-width: 750px; margin: 1.5rem auto 3rem; opacity: 0.9; }
 
-/* --- 3. CTA Buttons & Links --- */
 .cta-button { display: inline-flex; justify-content: center; align-items: center; background: var(--accent-gold); color: var(--primary-dark) !important; text-decoration: none; font-weight: 700; font-size: 1.3rem; padding: 20px 45px; border-radius: var(--border-radius); box-shadow: var(--shadow-lifted); transition: all 0.2s ease-in-out; border: none; cursor: pointer; text-align: center; }
 .cta-button:hover, .cta-button:focus { transform: translateY(-4px); box-shadow: 0 0 20px 8px var(--accent-gold-glow), var(--shadow-deep); }
 .cta-button.secondary { background: var(--primary-light); color: var(--text-light) !important; }
 .cta-button.secondary:hover { background: var(--primary-medium); }
 
-/* --- 4. Content Sections --- */
 .expertise-container, .expertise-grid { display: grid; gap: 2.5rem; }
 .expertise-container { grid-template-columns: 1fr 1fr; }
 .expertise-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
@@ -95,29 +91,28 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
 .step h4 { font-size: 1.4rem; margin-bottom: 0.5rem; }
 .step p { font-size: 1.05rem; color: var(--text-muted); }
 
-/* --- Risk Diagnosis Form Section (Dark) --- */
 #risk-diagnosis { background-color: var(--primary-dark); color: var(--text-light); padding: 6rem 2rem; }
 #risk-diagnosis h2 { color: var(--text-light); margin-bottom: 2rem; }
 #risk-diagnosis p { text-align:center; max-width: 700px; margin-left:auto; margin-right:auto; margin-bottom: 2rem; }
 #risk-diagnosis-form { 
-    max-width: 500px; /* Slimmer form width */
+    max-width: 500px; 
     margin: 2rem auto 0; 
     display: grid; 
     grid-template-columns: 1fr; 
-    gap: 1.8rem; /* Uniform spacing */
+    gap: 1.8rem; 
 }
 #risk-diagnosis-form .form-group { width: 100%; }
 #risk-diagnosis-form select,
 #risk-diagnosis-form input[type="text"],
 #risk-diagnosis-form input[type="tel"] {
     width: 100%;
-    box-sizing: border-box; /* Apply box-sizing */
-    height: 70px; /* Uniform height */
-    padding: 0 25px; /* Adjust padding */
-    border-radius: var(--border-radius); /* Uniform border-radius */
-    border: 1px solid #798da3; /* Clearer border on dark bg */
+    box-sizing: border-box; 
+    height: 70px; 
+    padding: 0 25px; 
+    border-radius: var(--border-radius); 
+    border: 1px solid #798da3; 
     background-color: var(--bg-white);
-    font-size: 1.3rem; /* Slightly larger font */
+    font-size: 1.3rem; 
     font-family: var(--font-sans);
     color: var(--text-dark);
 }
@@ -140,14 +135,13 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
 .form-guide-text { 
     text-align: center; 
     font-size: 1.1rem; 
-    color: #CCCCCC; /* Brighter color for contrast */
+    color: #CCCCCC; 
     margin-top: 2rem; 
     max-width: 650px; 
     margin-left: auto; 
     margin-right: auto; 
 }
 
-/* --- Contact Form Section (Light) --- */
 #contact { background: var(--bg-light); color: var(--text-dark); padding: 8rem 2rem; }
 #contact h2 { color: var(--primary-dark); font-size: clamp(2.8rem, 6vw, 3.8rem); }
 #contact p { text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; margin-bottom: 4rem; font-size: 1.3rem; }
@@ -161,11 +155,9 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
 #contact .privacy-agreement label { margin-bottom: 0; }
 #contact-form button.cta-button { font-size: 1.755rem; margin-top: 2rem; padding: 25px 50px; }
 
-/* --- 5. Footer --- */
 .main-footer { text-align: center; padding: 4rem 2rem; background: #001224; color: var(--text-light); }
 .main-footer p { margin: 0.5rem 0; opacity: 0.7; font-size: 1rem; }
 
-/* --- Location Section --- */
 #location { background-color: var(--bg-white); padding: 6rem 2rem; }
 .location-layout { display: flex; align-items: flex-start; gap: 4rem; }
 .location-info { flex-basis: 45%; }
@@ -179,7 +171,6 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
 .location-info h4 { font-size: 1.5rem; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px; }
 .location-map iframe { border-radius: var(--border-radius); box-shadow: var(--shadow-deep); }
 
-/* --- 6. Responsive Design & Mobile Nav --- */
 @media (max-width: 768px) {
     html { font-size: 16px; } 
     body { font-size: 1rem; line-height: 1.7; padding-bottom: 90px; } 
@@ -202,7 +193,7 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
 
     main { padding: 0 1.25rem; }
     section { padding: 4rem 0; }
-    #contact { padding: 5rem 1.25rem; } /* Adjusted for mobile */
+    #contact { padding: 5rem 0; } 
 
     .hero { padding: 5rem 1rem; }
     .hero p { font-size: 1.2rem; }
@@ -217,22 +208,28 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
     .expert-title p { font-size: 1rem; margin-bottom: 1rem; }
     .expertise-category-card .card-header h3 { font-size: 1.6rem; }
 
-
     #risk-diagnosis-form { 
         gap: 1.5rem; 
-        max-width: 100%; /* Full width on mobile */
+        max-width: 100%; 
     }
     #risk-diagnosis-form select,
     #risk-diagnosis-form input[type="text"],
     #risk-diagnosis-form input[type="tel"] {
-        height: 60px; /* Uniform mobile height */
+        height: 60px; 
         padding: 0 20px;
         font-size: 1.2rem;
     }
 
-    #contact-form { gap: 2rem; }
+    #contact-form { 
+        gap: 2rem; 
+        padding: 0 20px;
+    }
     #contact .form-group label { font-size: 1.3rem; }
-    #contact .form-group input, #contact .form-group textarea { font-size: 1.3rem; padding: 22px; }
+    #contact .form-group input, #contact .form-group textarea { 
+        font-size: 1.3rem; 
+        padding: 22px; 
+        box-sizing: border-box;
+    }
     #contact .privacy-agreement { font-size: 1.2rem; }
 
     .cta-button { font-size: 1.15rem; padding: 18px 30px; }
