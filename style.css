@@ -209,9 +209,14 @@ header { background: var(--primary-dark); color: var(--text-light); box-shadow: 
     h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
     h2 { font-size: clamp(1.8rem, 7vw, 2.2rem); margin-bottom: 3rem; }  
     
-    .expertise-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .expert-card, .expertise-category-card { padding: 2rem; }
-    .expertise-category-card .card-header h3, .expert-title h3 { font-size: 1.6rem; }
+    .expertise-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .expert-card { padding: 2.5rem 1.5rem; }
+    .expertise-category-card { padding: 2rem; }
+
+    .expert-title h3 { font-size: 1.4rem; }
+    .expert-title p { font-size: 1rem; margin-bottom: 1rem; }
+    .expertise-category-card .card-header h3 { font-size: 1.6rem; }
+
 
     #risk-diagnosis-form { 
         gap: 1.5rem; 
