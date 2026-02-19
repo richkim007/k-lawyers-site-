@@ -51,7 +51,7 @@
     <header>
         <div class="header-container">
             <div class="logo"><a href="/">법무법인 평원</a></div>
-            <nav>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="#all-expertise">전문 분야</a></li>
                     <li><a href="#ebooks">전자책</a></li>
@@ -59,8 +59,22 @@
                     <li><a href="#contact">상담 문의</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-toggle" aria-label="메뉴 열기">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
+
+    <nav class="mobile-nav">
+        <button class="mobile-menu-close" aria-label="메뉴 닫기">&times;</button>
+        <ul>
+            <li><a href="#all-expertise">전문 분야</a></li>
+            <li><a href="#ebooks">전자책</a></li>
+            <li><a href="#centaur-doctrine">AI 하이브리드</a></li>
+            <li><a href="#contact">상담 문의</a></li>
+        </ul>
+    </nav>
+    <div class="overlay"></div>
 
     <div class="hero">
         <h1>인간의 통찰력, AI의 정밀함 <br>법률의 미래를 만나다</h1>
@@ -360,7 +374,20 @@
         <p>(대표전화: 02-407-6785, 팩스 02-407-6784)</p>
         <p>이메일: laws88@k-lawyers.com</p>
     </footer>
-
+    <div class="sticky-footer">
+        <a href="tel:02-407-6785">
+            <i class="fas fa-phone-alt"></i>
+            <span>전화 상담</span>
+        </a>
+        <a href="#" id="kakao-talk-link">
+            <i class="fas fa-comment"></i>
+            <span>카톡 상담</span>
+        </a>
+        <a href="#contact">
+            <i class="fas fa-calendar-check"></i>
+            <span>온라인 예약</span>
+        </a>
+    </div>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
     <script src="/main.js"></script>
