@@ -202,11 +202,18 @@ nav ul a:hover { opacity: 1; }
 #contact .privacy-agreement {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 8px;
     font-size: 0.9rem;
     color: var(--text-muted);
 }
-#contact .privacy-agreement input {
-    margin-right: 1rem;
+#contact .privacy-agreement input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+#contact .privacy-agreement label {
+    white-space: nowrap;
+    margin-bottom: 0;
 }
 #contact-form button.cta-button {
     font-size: 1.25rem;
